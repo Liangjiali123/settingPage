@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShootingFragment">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/fragment_linear_rectangle">
+
+            <RelativeLayout
+                android:id="@+id/relative1"
+                style="@style/frament_relative_rect">
+
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="直方图" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_marginTop="5dp"
+                style="@style/frament_relative_rect">
+
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="过曝提示" />
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative3"
+                style="@style/frament_relative_rect">
+
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="辅助线" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative4"
+                android:layout_marginTop="30dp"
+                style="@style/frament_relative_rect">
+
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="录像分辨率" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relative5"
+                style="@style/frament_relative_rect">
+
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="录像帧率" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

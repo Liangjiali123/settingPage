@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".connectFragment">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/fragment_linear_rectangle">
+
+            <RelativeLayout
+                android:id="@+id/relative1"
+                style="@style/frament_relative_rect">
+
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="连接状态" />
+
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="已连接"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_marginTop="5dp"
+                style="@style/frament_relative_rect">
+
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="频段" />
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="2.4G"
+                    android:layout_alignParentRight="true" />
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="5G"
+                    android:layout_marginRight="100dp"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative3"
+                android:layout_marginTop="30dp"
+                style="@style/frament_relative_rect">
+
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="WIFI名称" />
+
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="Rover8789"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative4"
+                style="@style/frament_relative_rect">
+
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="WIFI密码" />
+
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="*******"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relative5"
+                style="@style/frament_relative_rect">
+
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="修改WIFI信息" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relative6"
+                android:layout_marginTop="30dp"
+                style="@style/frament_relative_rect">
+
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="图传" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SystemFragment">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/fragment_linear_rectangle">
+
+            <RelativeLayout
+                android:id="@+id/relative1"
+                style="@style/frament_relative_rect">
+
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="APP版本" />
+
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="V1.0"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_marginTop="5dp"
+                style="@style/frament_relative_rect">
+
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="系统音量" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative3"
+                android:layout_marginTop="30dp"
+                style="@style/frament_relative_rect">
+
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="固件升级" />
+
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="去升级"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative4"
+                style="@style/frament_relative_rect">
+
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="固件版本" />
+
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="V1.99.4"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

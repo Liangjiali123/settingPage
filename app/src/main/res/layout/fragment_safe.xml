@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/fragment_linear_rectangle">
+
+            <RelativeLayout
+                android:id="@+id/relative1"
+                style="@style/frament_relative_rect">
+
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="避障行为" />
+
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="关闭"
+                    android:layout_alignParentRight="true" />
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="刹停"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dp" />
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="绕行"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="100dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_marginTop="5dp"
+                style="@style/frament_relative_rect">
+
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="避障物雷达图" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative3"
+                android:layout_marginTop="30dp"
+                style="@style/frament_relative_rect">
+
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="虚拟护栏" />
+
+                <TextView
+                    style="@style/fragment_text_setting"
+                    android:text="最远距离"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="100dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
