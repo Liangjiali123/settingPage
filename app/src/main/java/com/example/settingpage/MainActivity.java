@@ -9,13 +9,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.settingpage.base.BaseActivity;
 import com.example.settingpage.fragment.ControlFragment;
 import com.example.settingpage.fragment.SafeFragment;
 import com.example.settingpage.fragment.ShootingFragment;
 import com.example.settingpage.fragment.SystemFragment;
 import com.example.settingpage.fragment.connectFragment;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends BaseActivity implements View.OnClickListener,IMainActivityContract.Iview{
 
     private TextView safeView,
             connectView,
@@ -23,14 +24,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             controlView,
             systemView;
 
-
+    IMainActivityContract.IPresenter mPresenter = new MainActivityPresenter(this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        initView();
 
+        initView();
         replaceFragment(new SafeFragment());
+    }
+
+    @Override
+    public void afterBindView() {
+
     }
 
     private void replaceFragment(Fragment fragment) {
@@ -79,4 +85,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         systemView.setOnClickListener(this::onClick);
     }
 
+    @Override
+    public void showFragment(Fragment fragment) {
+        getSupportFragmentManager().beginTransaction().show(fragment).commit();
+    }
+
+    @Override
+    public void addFragment(Fragment fragment) {
+        getSupportFragmentManager().beginTransaction().add(R.id.fragment_main_centent,fragment).commit();
+    }
+
+    @Override
+    public void hideFragment(Fragment fragment) {
+        getSupportFragmentManager().beginTransaction().hide(fragment).commit();
+    }
 }

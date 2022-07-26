@@ -3,8 +3,8 @@
     <corners android:radius="15dp" />
     <solid android:color="@color/gray_60" />
     <stroke
-        android:width="2dp"
-        android:color="@color/white" />
+        android:width="0.5dp"
+        android:color="@color/gray_c0" />
     <padding
         android:left="40dp"
         android:right="40dp"/>

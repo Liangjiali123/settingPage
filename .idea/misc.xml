@@ -8,8 +8,8 @@
         <entry key="..\:/Users/Jason/AndroidStudioProjects/settingPage/app/src/main/res/drawable/selector_main_bottom_tab_safe.xml" value="0.1" />
         <entry key="..\:/Users/Jason/AndroidStudioProjects/settingPage/app/src/main/res/drawable/setting_item_bg.xml" value="0.144" />
         <entry key="..\:/Users/Jason/AndroidStudioProjects/settingPage/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/Jason/AndroidStudioProjects/settingPage/app/src/main/res/layout/fragment_connect.xml" value="0.25" />
-        <entry key="..\:/Users/Jason/AndroidStudioProjects/settingPage/app/src/main/res/layout/fragment_control.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/Jason/AndroidStudioProjects/settingPage/app/src/main/res/layout/fragment_connect.xml" value="0.1" />
+        <entry key="..\:/Users/Jason/AndroidStudioProjects/settingPage/app/src/main/res/layout/fragment_control.xml" value="0.1" />
         <entry key="..\:/Users/Jason/AndroidStudioProjects/settingPage/app/src/main/res/layout/fragment_safe.xml" value="0.21375921375921375" />
         <entry key="..\:/Users/Jason/AndroidStudioProjects/settingPage/app/src/main/res/layout/fragment_shooting.xml" value="0.20364583333333333" />
         <entry key="..\:/Users/Jason/AndroidStudioProjects/settingPage/app/src/main/res/layout/fragment_system.xml" value="0.20364583333333333" />
